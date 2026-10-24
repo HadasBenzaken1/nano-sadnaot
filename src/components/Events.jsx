@@ -24,7 +24,7 @@ function Events() {
     <section
       id="events"
       dir="rtl"
-      className="rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2] px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
+      className="bg-[#F4EAE2] py-12 sm:py-16"
     >
       <div className="mx-auto max-w-7xl">
 
