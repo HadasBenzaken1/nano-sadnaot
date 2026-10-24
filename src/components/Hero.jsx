@@ -5,7 +5,7 @@ function Hero() {
     <section
       id="hero"
       dir="rtl"
-     // className="relative isolate overflow-hidden rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2]"
+    // className="relative isolate overflow-hidden rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2]"
     >
       {/* רקע עדין */}
       <div
@@ -69,27 +69,54 @@ function Hero() {
 
         </div>
 
-        {/* תמונה - צד שמאל */}
-        <div className="order-2 relative w-full">
 
-          <div
-            aria-hidden="true"
-            className="absolute -left-4 -top-4 h-32 w-32 rounded-full bg-[#BC8F73]/20 blur-2xl"
+
+        {/* תמונת HERO - גדולה ומשתלבת ברקע */}
+        <div className="order-2 relative w-full lg:scale-[1.25] lg:origin-center">
+
+          <img
+            src="/nano-hero3.png"
+            alt="סדנת יצירה של Nano עם מכבש סובלימציה ומוצרים בעיצוב אישי"
+            className="block h-auto w-full object-contain"
+            loading="eager"
+            fetchPriority="high"
+            style={{
+              WebkitMaskImage: `
+        linear-gradient(to right,
+          transparent 0%,
+          black 12%,
+          black 88%,
+          transparent 100%
+        ),
+        linear-gradient(to bottom,
+          transparent 0%,
+          black 14%,
+          black 86%,
+          transparent 100%
+        )
+      `,
+              maskImage: `
+        linear-gradient(to right,
+          transparent 0%,
+          black 10%,
+          black 90%,
+          transparent 100%
+        ),
+        linear-gradient(to bottom,
+          transparent 0%,
+          black 14%,
+          black 86%,
+          transparent 100%
+        )
+      `,
+              WebkitMaskComposite: 'source-in',
+              maskComposite: 'intersect',
+            }}
           />
 
-          <div className="relative overflow-hidden rounded-[1.75rem] bg-[#EDE5DE] shadow-[0_22px_55px_rgba(90,67,55,0.12)]">
-
-            <img
-              src="/nano-workshop-hero.png"
-              alt="סדנת יצירה של Nano עם שולחן אלמנטים ומוצרים בעיצוב אישי"
-              className="block aspect-[4/3] w-full object-cover object-center"
-              loading="eager"
-              fetchPriority="high"
-            />
-
-          </div>
-
         </div>
+
+
 
       </div>
     </section>
