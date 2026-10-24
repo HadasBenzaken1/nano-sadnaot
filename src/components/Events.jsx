@@ -24,9 +24,9 @@ function Events() {
     <section
       id="events"
       dir="rtl"
-      className="bg-white py-16 sm:py-20"
+      className="rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2] px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl">
 
         {/* כותרת */}
         <div className="mx-auto max-w-3xl text-center">
@@ -53,10 +53,10 @@ function Events() {
           {eventTypes.map(({ title, icon: Icon }) => (
             <div
               key={title}
-              className="group flex min-w-0 items-center gap-4 rounded-[1.5rem] border border-[#EADFD8] bg-[#F8F4F0]/50 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#BC8F73] hover:bg-white hover:shadow-[0_12px_30px_rgba(90,67,55,0.08)]"
+              className="group flex min-w-0 items-center gap-4 rounded-[1.5rem] border border-[#D9C4B5] bg-[#EAD8CC] p-5 transition duration-300 hover:-translate-y-1 hover:border-[#BC8F73] hover:bg-[#EFDCCB] hover:shadow-[0_12px_30px_rgba(90,67,55,0.08)]"
             >
 
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-[#921C24] shadow-sm">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#F4EAE2] text-[#921C24] shadow-sm">
                 <Icon size={23} strokeWidth={1.7} aria-hidden="true" />
               </div>
 
@@ -70,7 +70,7 @@ function Events() {
         </div>
 
         {/* התאמה אישית */}
-        <div className="relative mt-12 overflow-hidden rounded-[2rem] border border-[#EADFD8] bg-[#F8F4F0] p-7 sm:p-10">
+        <div className="relative mt-12 overflow-hidden rounded-[2rem] border border-[#D9C4B5] bg-[#EAD8CC] p-7 sm:p-10">
 
           {/* עיטור רקע */}
           <div
@@ -82,7 +82,7 @@ function Events() {
 
             <div className="max-w-3xl">
 
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#921C24] shadow-sm">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#F4EAE2] text-[#921C24] shadow-sm">
                 <Lightbulb size={27} strokeWidth={1.7} aria-hidden="true" />
               </div>
 

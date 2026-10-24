@@ -44,9 +44,9 @@ function Gallery() {
     <section
       id="video"
       dir="rtl"
-      className="bg-[#F8F4F0] pt-16 pb-5 sm:pt-20 sm:pb-6"
+      className="rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2] px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl">
 
         {/* כותרת */}
         <div className="mx-auto max-w-3xl text-center">
@@ -66,7 +66,7 @@ function Gallery() {
         </div>
 
         {/* סרטון */}
-        <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-[2rem] border border-[#EADFD8] bg-white p-2 shadow-[0_18px_45px_rgba(90,67,55,0.08)] sm:p-3">
+        <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-[2rem] border border-[#D9C4B5] bg-[#EAD8CC] p-2 shadow-[0_18px_45px_rgba(90,67,55,0.08)] sm:p-3">
 
           <video
             controls
@@ -92,7 +92,7 @@ function Gallery() {
               type="button"
               onClick={() => setActiveImage(index)}
               aria-label={`הגדלת תמונה ${index + 1}`}
-              className="group min-w-0 overflow-hidden rounded-[1.5rem] border border-[#EADFD8] bg-white p-1.5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(90,67,55,0.12)] sm:p-2"
+              className="group min-w-0 overflow-hidden rounded-[1.5rem] border border-[#D9C4B5] bg-[#EAD8CC] p-1.5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(90,67,55,0.12)] sm:p-2"
             >
               <img
                 src={image.src}

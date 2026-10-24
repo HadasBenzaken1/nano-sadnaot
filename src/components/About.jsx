@@ -6,8 +6,8 @@ import WhyNano from './WhyNano'
 
 function About() {
   return (
-    <section id="about" className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <div className="space-y-16">
+    <section id="about" className="mx-auto w-full px-3 py-4 sm:px-4 sm:py-5 lg:px-6">
+      <div className="space-y-4 sm:space-y-5">
         <Products />
         <Process />
         <Events />

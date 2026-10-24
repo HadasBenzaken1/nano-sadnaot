@@ -33,9 +33,9 @@ function Products() {
     <section
       id="products"
       dir="rtl"
-      className="bg-white py-16 sm:py-20"
+      className="rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2] px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl">
 
         {/* כותרת */}
         <div className="mx-auto max-w-2xl text-center">
@@ -63,10 +63,10 @@ function Products() {
           {products.map((product) => (
             <article
               key={product.name}
-              className="group overflow-hidden rounded-[1.5rem] border border-[#EADFD8] bg-[#F8F4F0] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(90,67,55,0.10)]"
+              className="group overflow-hidden rounded-[1.5rem] border border-[#D9C4B5] bg-[#EAD8CC] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(90,67,55,0.10)]"
             >
 
-              <div className="overflow-hidden bg-[#F4EDE7]">
+              <div className="overflow-hidden bg-[#EAD8CC]">
 
                 <img
                   src={product.image}
@@ -91,7 +91,7 @@ function Products() {
         </div>
 
         {/* התאמה אישית */}
-        <div className="mx-auto mt-12 max-w-3xl rounded-[1.5rem] border border-[#EADFD8] bg-[#F8F4F0] px-6 py-7 text-center sm:px-10">
+        <div className="mx-auto mt-12 max-w-3xl rounded-[1.5rem] border border-[#D9C4B5] bg-[#EAD8CC] px-6 py-7 text-center sm:px-10">
 
           <h3 className="text-xl font-bold text-[#5A4337]">
             הסדנה שלכם, הבחירה שלכם

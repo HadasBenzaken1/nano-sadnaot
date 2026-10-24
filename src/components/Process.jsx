@@ -27,9 +27,9 @@ function Process() {
     <section
       id="process"
       dir="rtl"
-      className="bg-[#F8F4F0] py-16 sm:py-20"
+      className="rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2] px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl">
 
         {/* כותרת */}
         <div className="mx-auto max-w-3xl text-center">
@@ -56,11 +56,11 @@ function Process() {
           {steps.map(({ number, title, text, icon: Icon }) => (
             <article
               key={number}
-              className="group relative overflow-hidden rounded-[1.75rem] border border-[#EADFD8] bg-white p-7 shadow-[0_12px_30px_rgba(90,67,55,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(90,67,55,0.10)]"
+              className="group relative overflow-hidden rounded-[1.75rem] border border-[#D9C4B5] bg-[#EAD8CC] p-7 shadow-[0_12px_30px_rgba(90,67,55,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(90,67,55,0.10)]"
             >
 
               {/* אייקון */}
-              <div className="mb-6 mr-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#F8F4F0] text-[#921C24]">
+              <div className="mb-6 mr-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#F4EAE2] text-[#921C24]">
                 <Icon
                   size={27}
                   strokeWidth={1.7}
