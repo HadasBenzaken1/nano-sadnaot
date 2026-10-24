@@ -22,7 +22,8 @@ function Gallery() {
 
   const previousImage = () => {
     setActiveImage(
-      (current) => (current - 1 + galleryImages.length) % galleryImages.length
+      (current) =>
+        (current - 1 + galleryImages.length) % galleryImages.length
     )
   }
 
@@ -46,11 +47,10 @@ function Gallery() {
       dir="rtl"
       className="bg-[#F4EAE2] py-12 sm:py-16"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-6xl">
 
         {/* כותרת */}
         <div className="mx-auto max-w-3xl text-center">
-
           <p className="text-sm font-semibold text-[#BC8F73]">
             רגעים מהסדנה
           </p>
@@ -62,49 +62,52 @@ function Gallery() {
           <p className="mt-5 text-base leading-8 text-[#7E6152] sm:text-lg">
             הצצה קטנה לרגעים, ליצירה ולקסם שקורה בסדנאות שלנו.
           </p>
-
         </div>
 
-        {/* סרטון */}
-        <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-[2rem] border border-[#D9C4B5] bg-[#EAD8CC] p-2 shadow-[0_18px_45px_rgba(90,67,55,0.08)] sm:p-3">
+        {/* גלריה משולבת */}
+        <div className="mt-10 grid items-start gap-5 lg:mt-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.5fr)] lg:gap-6">
 
-          <video
-            controls
-            playsInline
-            preload="metadata"
-            className="aspect-video w-full rounded-[1.5rem] bg-black object-contain"
-          >
-            <source
-              src="/gallery/nano-workshop.mp4"
-              type="video/mp4"
-            />
-            הדפדפן שלך אינו תומך בהצגת סרטון.
-          </video>
+          {/* סרטון אנכי */}
+          <div className="mx-auto w-full max-w-[340px] lg:max-w-none">
+            <div className="overflow-hidden rounded-[1.75rem] border border-[#D9C4B5] bg-[#EAD8CC] p-2 shadow-[0_12px_30px_rgba(90,67,55,0.08)]">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="aspect-[9/16] w-full rounded-[1.35rem] bg-black object-contain"
+              >
+                <source
+                  src="/gallery/nano-workshop.mp4"
+                  type="video/mp4"
+                />
+                הדפדפן שלך אינו תומך בהצגת סרטון.
+              </video>
+            </div>
+          </div>
+
+          {/* שש תמונות */}
+          <div className="grid min-w-0 grid-cols-2 gap-3 sm:gap-4">
+            {galleryImages.map((image, index) => (
+              <button
+                key={image.src}
+                type="button"
+                onClick={() => setActiveImage(index)}
+                aria-label={`הגדלת תמונה ${index + 1}`}
+                className="group min-w-0 overflow-hidden rounded-[1.5rem] border border-[#D9C4B5] bg-[#EAD8CC] p-1.5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(90,67,55,0.12)] sm:p-2"
+              >
+                <div className="overflow-hidden rounded-[1.1rem]">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+              </button>
+            ))}
+          </div>
 
         </div>
-
-        {/* גלריית תמונות */}
-        <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
-
-          {galleryImages.map((image, index) => (
-            <button
-              key={image.src}
-              type="button"
-              onClick={() => setActiveImage(index)}
-              aria-label={`הגדלת תמונה ${index + 1}`}
-              className="group min-w-0 overflow-hidden rounded-[1.5rem] border border-[#D9C4B5] bg-[#EAD8CC] p-1.5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(90,67,55,0.12)] sm:p-2"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                loading="lazy"
-                className="aspect-[4/3] w-full rounded-[1.1rem] object-cover transition duration-500 group-hover:scale-[1.04]"
-              />
-            </button>
-          ))}
-
-        </div>
-
       </div>
 
       {/* תצוגת תמונה מוגדלת */}
@@ -116,8 +119,6 @@ function Gallery() {
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4"
           onClick={closeImage}
         >
-
-          {/* סגירה */}
           <button
             type="button"
             onClick={closeImage}
@@ -127,7 +128,6 @@ function Gallery() {
             <X size={24} />
           </button>
 
-          {/* תמונה */}
           <img
             src={galleryImages[activeImage].src}
             alt={galleryImages[activeImage].alt}
@@ -135,7 +135,6 @@ function Gallery() {
             onClick={(event) => event.stopPropagation()}
           />
 
-          {/* תמונה קודמת */}
           <button
             type="button"
             onClick={(event) => {
@@ -148,7 +147,6 @@ function Gallery() {
             <ChevronRight size={26} />
           </button>
 
-          {/* תמונה הבאה */}
           <button
             type="button"
             onClick={(event) => {
@@ -161,11 +159,9 @@ function Gallery() {
             <ChevronLeft size={26} />
           </button>
 
-          {/* מונה תמונות */}
           <div className="absolute bottom-5 left-1/2 -translate-x-1/2 rounded-full bg-white/15 px-4 py-2 text-sm text-white">
             {activeImage + 1} / {galleryImages.length}
           </div>
-
         </div>
       )}
     </section>

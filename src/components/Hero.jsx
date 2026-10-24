@@ -5,7 +5,7 @@ function Hero() {
     <section
       id="hero"
       dir="rtl"
-      className="relative isolate overflow-hidden rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2]"
+     // className="relative isolate overflow-hidden rounded-[2.5rem] border border-[#D9C4B5]/80 bg-[#F4EAE2]"
     >
       {/* רקע עדין */}
       <div
