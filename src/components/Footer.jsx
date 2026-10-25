@@ -1,9 +1,9 @@
 import { Mail, MessageCircle } from 'lucide-react'
 
 const whatsappLink =
-  'https://wa.me/972553194305?text=%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A1%D7%93%D7%A0%D7%90%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9B%D7%9D%21'
+  'https://wa.me/972506800954?text=%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A1%D7%93%D7%A0%D7%90%D7%95%D7%AA%20%D7%A9%D7%9C%D7%9B%D7%9D%21'
 const emailLink =
-  'mailto:benzakenhadas@gmail.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20-%20NANO'
+  'mailto:nanosadnaot@gmail.com?subject=%D7%A4%D7%A0%D7%99%D7%99%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20-%20NANO'
 
 function Footer() {
   return (
@@ -15,11 +15,11 @@ function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a href={emailLink} className="inline-flex items-center gap-2 transition hover:text-[var(--color-primary)] hover:underline">
             <Mail size={16} />
-            <span>benzakenhadas@gmail.com</span>
+            <span>nanosadnaot@gmail.com</span>
           </a>
           <a href={whatsappLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition hover:text-[var(--color-primary)] hover:underline">
             <MessageCircle size={16} />
-            <span dir="ltr">+972 55 319 4305</span>
+            <span dir="ltr">050-6800954</span>
           </a>
         </div>
 

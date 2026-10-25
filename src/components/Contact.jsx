@@ -3,11 +3,11 @@ import { useState } from 'react'
 import { Mail, MessageCircle, Send } from 'lucide-react'
 
 const whatsappLink =
-  'https://wa.me/972553194305?text=' +
+  'https://wa.me/972506800954?text=' +
   encodeURIComponent('הגעתי מהאתר, אשמח לקבל פרטים נוספים על הסדנאות שלכם!')
 
 const emailLink =
-  'mailto:benzakenhadas@gmail.com?subject=' +
+  'mailto:nanosadnaot@gmail.com?subject=' +
   encodeURIComponent('פנייה מהאתר - NANO')
 
 const accessKey = '54b35431-31f5-426a-b889-6930133b278b'
