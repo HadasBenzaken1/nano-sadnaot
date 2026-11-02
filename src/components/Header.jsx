@@ -41,13 +41,13 @@ function Header() {
   const closeMenu = () => setMenuOpen(false)
 
   return (
+
     <header
       dir="rtl"
-      className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
-        scrolled
-          ? 'border-[#D9C4B5]/70 bg-[#E9DDD3]/95 shadow-[0_6px_25px_rgba(90,67,55,0.07)] backdrop-blur-xl'
-          : 'border-[#D9C4B5]/40 bg-[#E9DDD3]/95 backdrop-blur-md'
-      }`}
+      className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${scrolled
+          ? 'border-[#D9C4B5]/70 bg-[#E9DDD3] shadow-[0_6px_25px_rgba(90,67,55,0.07)]'
+          : 'border-[#D9C4B5]/40 bg-[#E9DDD3]'
+        }`}
     >
       <div className="mx-auto flex h-[76px] w-full max-w-7xl items-center justify-between gap-5 px-5 sm:px-8 lg:px-10">
 
