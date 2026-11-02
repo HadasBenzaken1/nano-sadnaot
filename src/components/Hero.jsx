@@ -10,8 +10,8 @@ function Hero() {
         className="
         relative mx-auto grid w-full max-w-[1600px]
         grid-cols-1 items-center gap-4
-        px-5 pb-10 pt-8
-        sm:px-8 sm:pb-12 sm:pt-10
+        px-5 pb-2 pt-8
+        sm:px-8 sm:pb-4 sm:pt-10
         lg:min-h-[720px]
         lg:grid-cols-[0.95fr_1.05fr]
         lg:gap-0 lg:px-10 lg:py-0
@@ -69,21 +69,38 @@ function Hero() {
         </div>
 
 
-        {/* תמונת הסדנה - עם קצוות רכים מימין ולמטה */}
-        <div className="relative order-2 min-w-0 w-full lg:h-[720px] lg:self-stretch">
 
-          <div className="relative h-full w-full lg:w-[125%] lg:translate-x-[10%]">
-
+        {/* תמונת הסדנה - מותאמת למחשב ולטלפון */}
+        <div
+          className="
+    relative order-2 min-w-0 w-full
+    -mt-2
+    lg:mt-0 lg:h-[720px] lg:self-stretch
+  "
+        >
+          <div
+            className="
+      relative
+      -mx-5 w-[calc(100%+2.5rem)]
+      sm:-mx-8 sm:w-[calc(100%+4rem)]
+      lg:mx-0 lg:h-full lg:w-[125%]
+      lg:translate-x-[10%]
+    "
+          >
             <img
               src="/hero-1.png"
               alt="ילדים ובני נוער משתתפים בסדנת יצירה של Nano"
-              className="block h-auto w-full lg:h-full lg:object-cover lg:object-center"
+              className="
+        block h-auto w-full
+        lg:h-full lg:object-cover lg:object-center
+      "
               loading="eager"
               fetchPriority="high"
               style={{
                 WebkitMaskImage: `
           linear-gradient(to right,
-            black 0%,
+            transparent 0%,
+            black 5%,
             black 68%,
             transparent 100%
           ),
@@ -95,7 +112,8 @@ function Hero() {
         `,
                 maskImage: `
           linear-gradient(to right,
-            black 0%,
+            transparent 0%,
+            black 5%,
             black 68%,
             transparent 100%
           ),
@@ -109,9 +127,9 @@ function Hero() {
                 maskComposite: 'intersect',
               }}
             />
-
           </div>
         </div>
+
 
 
       </div>
