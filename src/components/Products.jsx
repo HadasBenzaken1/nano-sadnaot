@@ -3,27 +3,27 @@
 const products = [
   {
     name: 'תיקים',
-    image: '/products/nano-bags.png',
+    image: '/products/bags.jpeg',
   },
   {
     name: 'בקבוקים וספלים',
-    image: '/products/nano_drinkware.png',
+    image: '/products/drinkware.jpeg',
   },
   {
     name: 'מחברות ויומנים',
-    image: '/products/nano_notebooks.png',
+    image: '/products/notebooks.jpeg',
   },
   {
     name: 'אביזרים אישיים',
-    image: '/products/nano_accessories.png',
+    image: '/products/accessories.jpeg',
   },
   {
-    name: 'כריות וכירבוליות',
-    image: '/products/nano_blankets_pillows.png',
+    name: 'אביזרי מטבח',
+    image: '/products/kitchen.jpeg',
   },
   {
     name: 'מוצרים מיוחדים',
-    image: '/products/nano_special_products.png',
+    image: '/products/special.jpeg',
   },
 ]
 
@@ -99,7 +99,7 @@ function Products() {
 
           <p className="mt-3 text-sm leading-7 text-[#7E6152] sm:text-base">
             לקראת האירוע נבחר יחד את המוצרים המתאימים
-            לאופי הסדנה, למשתתפים ולתקציב —
+            לאופי הסדנה, למשתתפים ולתקציב -
             מוצר אחיד לכולם או מגוון מוצרים לבחירה.
           </p>
 

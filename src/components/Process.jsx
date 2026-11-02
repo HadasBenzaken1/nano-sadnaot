@@ -43,7 +43,7 @@ function Process() {
 
           <p className="mt-5 text-base leading-8 text-[#7E6152] sm:text-lg">
             מהשולחן המלא בהשראה ועד לרגע שבו
-            היצירה האישית הופכת למוצר אמיתי —
+            היצירה האישית הופכת למוצר אמיתי -
             כל שלב בסדנה הוא חלק מהחוויה.
           </p>
         </div>
@@ -91,7 +91,7 @@ function Process() {
 
         {/* משפט מסכם */}
         <p className="mx-auto mt-11 max-w-3xl text-center text-lg font-semibold leading-8 text-[#921C24]">
-          אינסוף אפשרויות, אינסוף רעיונות —
+          אינסוף אפשרויות, אינסוף רעיונות -
           וכל יצירה היא עולם בפני עצמו.
         </p>
 
