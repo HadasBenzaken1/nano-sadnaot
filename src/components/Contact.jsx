@@ -10,7 +10,7 @@ const emailLink =
   'mailto:nanosadnaot@gmail.com?subject=' +
   encodeURIComponent('פנייה מהאתר - NANO')
 
-const accessKey = '54b35431-31f5-426a-b889-6930133b278b'
+const accessKey = 'de67128d-a7f6-4293-a85d-12239bf2a295'
 
 const inputClass =
   'w-full min-w-0 rounded-xl border border-[#D9C4B5] bg-[#FBF5EF] px-4 py-3 text-base text-[#5A4337] outline-none transition placeholder:text-[#A18C80] focus:border-[#BC8F73] focus:ring-2 focus:ring-[#BC8F73]/20'
