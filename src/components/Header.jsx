@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import { ArrowLeft } from 'lucide-react'
-import nanoLogo from '../assets/nano-logo.png'
+import nanoLogo from '../assets/nano-logo.webp'
 
 function Header() {
   const [scrolled, setScrolled] = useState(false)
