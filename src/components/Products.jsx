@@ -3,27 +3,27 @@
 const products = [
   {
     name: 'תיקים',
-    image: '/products/bags.jpeg',
+    image: '/products/bags.webp',
   },
   {
     name: 'בקבוקים וספלים',
-    image: '/products/drinkware.jpeg',
+    image: '/products/drinkware.webp',
   },
   {
     name: 'מחברות ויומנים',
-    image: '/products/notebooks.jpeg',
+    image: '/products/notebooks.webp',
   },
   {
     name: 'אביזרים אישיים',
-    image: '/products/accessories.jpeg',
+    image: '/products/accessories.webp',
   },
   {
     name: 'אביזרי מטבח',
-    image: '/products/kitchen.jpeg',
+    image: '/products/kitchen.webp',
   },
   {
     name: 'מוצרים מיוחדים',
-    image: '/products/special.jpeg',
+    image: '/products/special.webp',
   },
 ]
 

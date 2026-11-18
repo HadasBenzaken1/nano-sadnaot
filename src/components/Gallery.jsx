@@ -3,13 +3,13 @@ import { useState, useEffect } from 'react'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const galleryImages = [
-  { src: '/gallery/gallery-1.jpeg', alt: 'רגעים מסדנת Nano - תמונה 1' },
-  { src: '/gallery/gallery-2.jpeg', alt: 'רגעים מסדנת Nano - תמונה 2' },
-  { src: '/gallery/gallery-3.jpeg', alt: 'רגעים מסדנת Nano - תמונה 3' },
-  { src: '/gallery/gallery-4.jpeg', alt: 'רגעים מסדנת Nano - תמונה 4' },
-  { src: '/gallery/gallery-5.jpeg', alt: 'רגעים מסדנת Nano - תמונה 5' },
-  { src: '/gallery/gallery-6.jpeg', alt: 'רגעים מסדנת Nano - תמונה 6' },
-  { src: '/gallery/gallery-7.jpeg', alt: 'רגעים מסדנת Nano - תמונה 7' },
+  { src: '/gallery/gallery-1.webp', alt: 'רגעים מסדנת Nano - תמונה 1' },
+  { src: '/gallery/gallery-2.webp', alt: 'רגעים מסדנת Nano - תמונה 2' },
+  { src: '/gallery/gallery-3.webp', alt: 'רגעים מסדנת Nano - תמונה 3' },
+  { src: '/gallery/gallery-4.webp', alt: 'רגעים מסדנת Nano - תמונה 4' },
+  { src: '/gallery/gallery-5.webp', alt: 'רגעים מסדנת Nano - תמונה 5' },
+  { src: '/gallery/gallery-6.webp', alt: 'רגעים מסדנת Nano - תמונה 6' },
+  { src: '/gallery/gallery-7.webp', alt: 'רגעים מסדנת Nano - תמונה 7' },
 ]
 
 function Gallery() {
